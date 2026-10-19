@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#2a1640">
+<title>Mariam's Nail Quest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <canvas id="cv"></canvas>
+  <button id="snd" aria-label="Sonido"><svg viewBox="0 0 24 24" width="100%" height="100%"><path d="M4 9h4l5-4v14l-5-4H4z" fill="#fff"/><path class="w" d="M16 9c1.5 1.6 1.5 4.4 0 6M18.5 6.5c3 3 3 8 0 11" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path class="x" d="M16 9l5 6M21 9l-5 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <button id="cap" class="b" disabled>CAPTURAR</button>
+
+  <section class="screen on" id="menu">
+    <h1>MARIAM'S<br>NAIL QUEST</h1>
+    <p class="sub">Una aventura absurda de uñas</p>
+    <button class="b" id="play">JUGAR</button>
+    <button class="b alt" id="howBtn">CÓMO JUGAR</button>
+  </section>
+
+  <section class="screen" id="how">
+    <h2>CÓMO JUGAR</h2>
+    <div class="panel">
+      <p><b>1.</b> Toca los diseños bonitos.</p>
+      <p><b>2.</b> Mantén el dedo en la zona verde.</p>
+      <p><b>3.</b> Encuadra las uñas y captura.</p>
+      <p>Tienes 3 vidas en los niveles 1 y 2. ¡Tarda unos 3-5 minutos!</p>
+    </div>
+    <button class="b" id="howBack">VOLVER</button>
+  </section>
+
+  <section class="screen" id="intro">
+    <div class="panel">
+      <div class="tag" id="iN"></div>
+      <h2 id="iT"></h2>
+      <p id="iD"></p>
+      <p class="tag" id="iS"></p>
+    </div>
+    <button class="b" id="iGo">¡EMPEZAR!</button>
+  </section>
+
+  <section class="screen" id="lose">
+    <h1>¡AY NO!</h1>
+    <p id="lm"></p>
+    <button class="b" id="retry">REINTENTAR NIVEL</button>
+    <button class="b alt" id="toMenu">MENÚ</button>
+  </section>
+
+  <section class="screen" id="final">
+    <h2 class="big">¡FOTO PERFECTA!</h2>
+    <div class="grow"></div>
+    <div class="panel">
+      <p>PUNTOS TOTALES: <b id="fs">0</b></p>
+      <p class="tag" id="fr"></p>
+    </div>
+    <button class="b" id="again">JUGAR OTRA VEZ</button>
+  </section>
+</div>
+<script src="art.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
